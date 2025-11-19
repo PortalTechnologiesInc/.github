@@ -10,53 +10,55 @@ Welcome to the official GitHub organization for **Portal**: the user-facing inte
 
 **🕳️ What Is Portal?**
 
-**Portal** is a mobile app that manages your digital identity, your public key,  and acts as a secure approval layer for sensitive operations:
+**Portal** is a digital identity provider built on **Nostr** and **Lightning**. It manages your digital identity and public keys, acting as a secure approval layer for sensitive operations:
 
 * ✅ Authorize passwordless logins
-
-* 🤝 Approve single or recurring payments
-
+* 🤝 Approve single or recurring payments (Lightning & Cashu)
 * 🔐 Share zero-knowledge proofs of documents like passports or driver's licenses
 
 Behind the scenes, Portal is a **client** of a **decentralized FOSS protocol** we're developing. This protocol powers the logic and trust model — Portal simply gives users a clean, friendly interface to access it all.
 
-**🛠️ Built with:**
+**🛠️ Built With**
 
-For the mobile application We used typescript and for the underlying protocol We used Rust
+We utilize a modern, high-performance stack to ensure security and scalability:
+
+* **Core Protocol & Backend:** Written in **Rust** 🦀 for safety, speed, and memory efficiency.
+* **Client Applications:** Built with **TypeScript** (and **Svelte** for web demos) to ensure a responsive user experience.
+* **SDKs & Integrations:** implementations available in **Java** and **Rust**.
 
 **📲 What Can You Do with Portal?**
 
-* Log in without usernames or passwords
-
-* Approve subscriptions and one-time payments with a tap
-
-* Authenticate in person using your device
-
-* Link any Nostr Wallet Connect-compatible wallet
-
-* Share proofs of identity without leaking personal data
+* Log in without usernames or passwords.
+* Approve subscriptions and one-time payments with a tap.
+* Authenticate in person using your device.
+* Link any Nostr Wallet Connect-compatible wallet.
+* Manage privacy-preserving e-cash (via Cashu).
+* Share proofs of identity without leaking personal data.
 
 Portal doesn’t custody your keys, funds, or data.
 
-**Projects Under This Org**
+**📂 Projects Under This Org**
 
-| Repository | Description |
-| ----- | ----- |
-| [`portal-app`](https://github.com/PortalTechnologiesInc/Portal-App) | The main mobile app — built to interact with the decentralized protocol |
-| [`lib`](https://github.com/PortalTechnologiesInc/lib) | Main implementation of the protocol |
+| Repository | Description | Tech Stack |
+| :--- | :--- | :--- |
+| [`portal-app`](https://github.com/PortalTechnologiesInc/portal-app) | **The Main App.** Digital identity provider built on Nostr & Lightning. | TypeScript |
+| [`lib`](https://github.com/PortalTechnologiesInc/lib) | **Core Protocol.** The primary Rust implementation of the Portal protocol. | Rust |
+| [`portal-access-control`](https://github.com/PortalTechnologiesInc/portal-access-control) | **Auth Service.** A microservice to manage user access control and permissions. | Rust |
+| [`jvm-client`](https://github.com/PortalTechnologiesInc/jvm-client) | **Java SDK.** A client implementation for the Portal WebSocket Server. | Java |
+| [`portal-business-app`](https://github.com/PortalTechnologiesInc/portal-business-app) | **Business Integration.** Logic and interface for merchant/business adoption. | TypeScript |
+| [`cdk`](https://github.com/PortalTechnologiesInc/cdk) | **Cashu Dev Kit.** Our implementation/fork for handling Chaumian e-cash operations. | Rust |
+| [`healthcheck-service`](https://github.com/PortalTechnologiesInc/healthcheck-service) | **Infrastructure.** Service monitoring and health status checks. | Rust |
 
 **📝 License**
 
-All code under this org is released under the MIT License, unless otherwise noted.
+All code under this org is released under the **MIT License**, unless otherwise noted in specific repositories.
 
-**Contribution**
+**🤝 Contribution**
 
 Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the Apache-2.0 license, shall be dual licensed as above, without any additional terms or conditions.
 
 📫 **Contact**
 
-* Website: [https://getportal.cc](https://getportal.cc)
-
-* Twitter: [@PortalOnX](https://x.com/PortalOnX)
-
-* Email: `TBD`
+* **Website:** [https://getportal.cc](https://getportal.cc)
+* **Twitter/X:** [@PortalOnX](https://x.com/PortalOnX)
+* **Email:** `TBD`
