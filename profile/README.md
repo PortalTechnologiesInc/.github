@@ -43,8 +43,8 @@ Portal doesn’t custody your keys, funds, or data.
 | :--- | :--- | :--- |
 | [`portal-app`](https://github.com/PortalTechnologiesInc/portal-app) | **The Main App.** Digital identity provider built on Nostr & Lightning. | TypeScript |
 | [`lib`](https://github.com/PortalTechnologiesInc/lib) | **Core Protocol.** The primary Rust implementation of the Portal protocol. | Rust |
+| [`java-sdk`](https://github.com/PortalTechnologiesInc/java-sdk) | **Java SDK.** A client implementation for the Portal WebSocket Server. | Java |
 | [`portal-access-control`](https://github.com/PortalTechnologiesInc/portal-access-control) | **Auth Service.** A microservice to manage user access control and permissions. | Rust |
-| [`jvm-client`](https://github.com/PortalTechnologiesInc/jvm-client) | **Java SDK.** A client implementation for the Portal WebSocket Server. | Java |
 | [`portal-business-app`](https://github.com/PortalTechnologiesInc/portal-business-app) | **Business Integration.** Logic and interface for merchant/business adoption. | TypeScript |
 | [`cdk`](https://github.com/PortalTechnologiesInc/cdk) | **Cashu Dev Kit.** Our implementation/fork for handling Chaumian e-cash operations. | Rust |
 | [`healthcheck-service`](https://github.com/PortalTechnologiesInc/healthcheck-service) | **Infrastructure.** Service monitoring and health status checks. | Rust |
